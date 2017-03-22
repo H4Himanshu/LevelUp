@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Levelup.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/square/green.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/icheck.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+                increaseArea: '20%' // optional
+            });
+        });
+
+    </script>
+  
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-static-top example-8">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar8">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                 <a class="navbar-brand" href="#"><span class="tag-line">Change is end result of true learning</span></a>
+            </div>
+            <div id="navbar8" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left btn-network">
+                    <li><a href="#" class="navbar-btn">Start</a>
+                    </li>
+                    <li><a href="#" class="navbar-btn">Blog</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right btn-network hidden-xs">
+                    <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" hidden-lg" style="">
+              <ul class="social-icons-list">
+                    <li class="social-icons"><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="social-icons"><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="social-icons"><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    </li>
+              </ul>      
+            </div>
+
+            <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+    </nav>
+     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 foto">
+                <a data-toggle="modal" data-target="#myModal">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/1.png" alt="">
+                        <div class="overlay">
+                            <h2 class="underline">Seeker</h2>
+                            <!-- <img src="img/4.png" class="img-responsive logo"> -->
+                            <!-- <p>
+                        <a data-toggle="modal" data-target="#myModal">Click Me </a>
+                     </p> -->
+                        </div>
+                        <!-- <div class="logo"></div> -->
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 foto">
+                <a data-toggle="modal" data-target="#myModal">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/2.jpg" alt="">
+                        <div class="overlay">
+                            <h2 class="underline">Warrior</h2>
+                            <!-- <p>
+                        <a href="#" data-toggle="modal" data-target="#myModal">Click Me </a>
+                     </p> -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 foto">
+                <a data-toggle="modal" data-target="#myModal">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="img/3.jpg" alt="">
+                        <div class="overlay">
+                            <h2 class="underline">Explorer</h2>
+                            <!-- <p>
+                        <a data-toggle="modal" data-target="#myModal">Click Me </a>
+                     </p> -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Looking for a chance to change your future by learning a new skill ?</h4>
+                            <!-- <img src="img/4.jpg" class="img-responsive"> -->
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal" id="my_form" onsubmit="submitForm(); return false;">
+                                <fieldset>
+
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="textinput">I Want To Learn: </label>
+                                        <div class="col-md-8">
+                                            <input id="level-inpt" name="level-inpt" type="text" placeholder="I would like to learn" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="radios">My Level Of Learning:</label>
+                                        <div class="col-md-8">
+                                            <label class="radio-inline" for="radios-0">
+                                                <input type="radio" name="learning-lvl" id="learning-lvl" value="Novice" checked="checked"> Novice
+                                            </label>
+                                            <label class="radio-inline" for="radios-1">
+                                                <input type="radio" name="learning-lvl" id="learning-lvl" value="Amateur"> Amateur
+                                            </label>
+                                            <label class="radio-inline" for="radios-2">
+                                                <input type="radio" name="learning-lvl" id="learning-lvl" value="Master"> Master
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="textinput">My Email-ID is:</label>
+                                        <div class="col-md-8">
+                                            <input id="email-id" name="message-txt" type="email" placeholder="Your Email-ID" class="form-control input-md" required="">
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Button -->
+                                    <div class="form-group" id="singlebutton">
+                                        <label class="col-md-4 control-label" for="singlebutton"></label>
+                                        <div class="col-md-4 text-center">
+                                            <button id="mybtn" name="singlebutton" class="btn btn-primary">This Is My Dream</button>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+                        </div>
+                        <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                     </div> -->
+                            <div id="myModal1" class="modal fade" role="dialog">
+                              <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Message From lvlup.in</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>We have saved your details and will contact you soon.</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                            <div id="myModal2" class="modal fade" role="dialog">
+                              <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Message From lvlup.in</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>Opps!! There is some issue with internet connection or some internal network issue. Come Back Soon !!</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script type="text/javascript">
+      function _(id) {return document.getElementById(id);}
+      function submitForm()
+      {
+
+        _("mybtn").disabled=true;
+        // _("status").innerHTML="Please Wait....";
+        var formData=new FormData();
+        formData.append("level-inpt", _("level-inpt").value);
+        formData.append("learning-lvl", _("learning-lvl").value);
+        formData.append("email-id", _("email-id").value);
+        var ajax= new XMLHttpRequest();
+
+        ajax.open("POST","example_parser.php");
+        ajax.onreadystatechange=function(){
+          if(ajax.readyState==4 && ajax.status==200){
+            if(ajax.responseText=="success")
+            {
+              // _("my_form").innerHTML='<h2>Thanks '+_("level-inpt").value+', your message has been sent. </h2>';
+              $('#myModal1').modal('show');
+            }
+            
+            else
+            {
+              $('#myModal2').modal('show');
+            }
+          }
+          
+      }
+        ajax.send(formData);
+        }
+    </script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>
